@@ -126,10 +126,11 @@ proxy-groups:
     <<: *proxies-common
 
 rules:
-  - GEOSITE,private,DIRECT
   - PROCESS-NAME,com.openai.chatgpt,🤖 AI
   - PROCESS-NAME,com.ss.android.ugc.trill,🎵 TikTok
   - PROCESS-NAME,com.zhiliaoapp.musically,🎵 TikTok
+  - GEOSITE,private,DIRECT
+  - GEOIP,private,DIRECT,no-resolve
   - GEOSITE,github,🧩 其他流量
   - GEOSITE,binance,🪙 交易所
   - GEOSITE,bybit,🪙 交易所
@@ -144,8 +145,7 @@ rules:
   - GEOSITE,steam@cn,🇨🇳 China
   - GEOSITE,category-ads-all,🛡️ AD-Block
   - GEOSITE,cn,🇨🇳 China
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,🇨🇳 China
+  - GEOIP,CN,🇨🇳 China,no-resolve
   - MATCH,🧩 其他流量
 
 rule-providers:
