@@ -108,8 +108,6 @@ proxy-groups:
     <<: *proxies-common
   - name: 🎵 TikTok
     <<: *proxies-common
-  - name: ♊ Gemini
-    <<: *proxies-common
   - name: 🔍 Google
     <<: *proxies-common
   - name: ☁️ OneDrive
@@ -138,8 +136,8 @@ rules:
   - GEOSITE,onedrive,☁️ OneDrive
   - GEOSITE,microsoft,🪟 Microsoft
   - GEOSITE,apple,🍎 Apple
-  - GEOSITE,steam@cn,🇨🇳 China
   - GEOSITE,bilibili,📺 BiliBili
+  - GEOSITE,steam@cn,🇨🇳 China
   - GEOSITE,category-ads-all,🛡️ AD-Block
   - GEOSITE,cn,🇨🇳 China
   - GEOIP,LAN,DIRECT
