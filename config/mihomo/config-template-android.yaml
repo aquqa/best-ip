@@ -1,0 +1,154 @@
+ipv6: false
+external-controller: 127.0.0.1:9997
+secret: "secret"
+mode: rule
+log-level: info
+unified-delay: true
+profile:
+  store-selected: true
+  store-fake-ip: true
+
+tun:
+  enable: true
+  stack: mixed
+  device: tun
+  auto-route: true
+  strict-route: true
+  dns-hijack:
+    - "any:53"
+    - "tcp://any:53"
+
+geo-auto-update: true
+geo-update-interval: 24
+geox-url:
+  geosite: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat"
+  mmdb: "https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip.metadb"
+
+dns:
+  enable: true
+  listen: "127.0.0.1:53"
+  ipv6: false
+  use-hosts: true
+  cache-algorithm: arc
+  respect-rules: true
+
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  fake-ip-filter:
+    - "rule-set:fakeip-filter"
+
+  default-nameserver:
+  - "tls://223.5.5.5:853"
+  - "tls://223.6.6.6:853"
+  nameserver-policy:
+    "geosite:geolocation-!cn":
+      - "https://1.1.1.1/dns-query"
+      - "https://8.8.8.8/dns-query"
+  nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  direct-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+  direct-nameserver-follow-policy: false
+  proxy-server-nameserver:
+    - "https://doh.pub/dns-query"
+    - "https://dns.alidns.com/dns-query"
+
+provider-common: &provider-common
+  type: http
+  interval: 86400
+  health-check:
+    enable: true
+    url: https://www.gstatic.com/generate_204
+    interval: 3600
+    timeout: 8000
+    lazy: true
+
+proxy-providers:
+  airport:
+    <<: *provider-common
+    url: "https://airport.sub"
+    path: ./proxies/airport.yaml
+
+proxies-common: &proxies-common
+    type: select
+    proxies:
+      - DIRECT
+      - 👉 手动选择Ⅰ
+      - 👉🏻 手动选择Ⅱ
+      - 👉🏽 手动选择Ⅲ
+      - ♻️ 自动选择
+      - REJECT
+
+proxy-groups:
+  - name: 👉 手动选择Ⅰ
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+  - name: 👉🏻 手动选择Ⅱ
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+  - name: 👉🏽 手动选择Ⅲ
+    type: select
+    proxies:
+      - DIRECT
+      - REJECT
+  - name: ♻️ 自动选择
+    type: url-test
+    use:
+      - airport
+    tolerance: 50
+  - name: 🪙 交易所
+    <<: *proxies-common
+  - name: 🤖 AI
+    <<: *proxies-common
+  - name: 🎵 TikTok
+    <<: *proxies-common
+  - name: 🔍 Google
+    <<: *proxies-common
+  - name: ☁️ OneDrive
+    <<: *proxies-common
+  - name: 🪟 Microsoft
+    <<: *proxies-common
+  - name: 🍎 Apple
+    <<: *proxies-common
+  - name: 🇨🇳 China
+    <<: *proxies-common
+  - name: 📺 BiliBili
+    <<: *proxies-common
+  - name: 🛡️ AD-Block
+    <<: *proxies-common
+  - name: 🧩 其他流量
+    <<: *proxies-common
+
+rules:
+  - GEOSITE,private,DIRECT
+  - GEOSITE,binance,🪙 交易所
+  - GEOSITE,bybit,🪙 交易所
+  - GEOSITE,okx,🪙 交易所
+  - GEOSITE,category-ai-!cn,🤖 AI
+  - GEOSITE,tiktok,🎵 TikTok
+  - GEOSITE,google,🔍 Google
+  - GEOSITE,onedrive,☁️ OneDrive
+  - GEOSITE,microsoft,🪟 Microsoft
+  - GEOSITE,apple,🍎 Apple
+  - GEOSITE,bilibili,📺 BiliBili
+  - GEOSITE,steam@cn,🇨🇳 China
+  - GEOSITE,category-ads-all,🛡️ AD-Block
+  - GEOSITE,cn,🇨🇳 China
+  - GEOIP,LAN,DIRECT
+  - GEOIP,CN,🇨🇳 China
+  - MATCH,🧩 其他流量
+
+rule-providers:
+  fakeip-filter:
+    type: http
+    behavior: domain
+    format: mrs
+    path: ./ruleset/fakeip-filter.mrs
+    url: "https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs"
+    interval: 86400
