@@ -28,3 +28,6 @@
 154.17.26.204:443#SJC-US-San Jose-AS906-DMIT Cloud Services
 64.186.245.27:443#LAX-US-Los Angeles-AS906-DMIT Cloud Services
 150.230.212.247:443#NRT-JP-Tokyo-AS31898-Oracle Corporation
+191.223.208.224:443#HKG-HK-Hong Kong-AS906-DMIT Cloud Services
+154.12.188.161:443#HKG-HK-Hong Kong-AS906-DMIT Cloud Services
+191.223.212.252:443#HKG-HK-Hong Kong-AS906-DMIT Cloud Services
