@@ -18,3 +18,23 @@
 179.255.100.186:443#LAX-US-Los Angeles-AS906-DMIT Cloud Services
 220.132.74.165:443#TPE-TW-Taipei-AS3462-Data Communication Business Group
 8.216.49.20:443#NRT-JP-Tokyo-AS45102-Alibaba (US) Technology Co., Ltd.
+139.162.70.21:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.237.11.146:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.237.6.212:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.105.225.6:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.238.18.137:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.104.120.92:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.104.81.253:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.104.86.229:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+104.105.128.153:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.233.64.181:8443#KIX-JP-Osaka-AS63949-Akamai Connected Cloud
+172.234.89.153:443#KIX-JP-Osaka-AS63949-Akamai Connected Cloud
+172.237.12.70:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.104.80.248:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.237.5.76:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+139.162.120.169:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.237.5.208:2053#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.237.7.122:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.237.5.239:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
+172.233.91.71:443#KIX-JP-Osaka-AS63949-Akamai Connected Cloud
+172.237.7.216:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
