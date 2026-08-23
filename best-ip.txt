@@ -27,10 +27,3 @@
 172.237.5.208:2053#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
 8.216.49.20:443#NRT-JP-Tokyo-AS45102-Alibaba (US) Technology Co., Ltd.
 172.233.64.181:8443#KIX-JP-Osaka-AS63949-Akamai Connected Cloud
-172.104.80.248:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
-172.237.5.239:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
-172.237.5.76:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
-172.233.91.71:443#KIX-JP-Osaka-AS63949-Akamai Connected Cloud
-139.162.120.169:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
-172.237.12.70:443#NRT-JP-Tokyo-AS63949-Akamai Connected Cloud
-38.207.174.111:443#HKG-HK-Hong Kong-AS967-VMISS Inc.
