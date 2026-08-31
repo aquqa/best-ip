@@ -9,3 +9,11 @@
 104.18.0.105:443#North America-Seattle-SEA-US
 104.19.121.93:443#North America-Los Angeles-LAX-US
 104.17.248.75:443#North America-Seattle-SEA-US
+104.17.98.16:443#Asia Pacific-Hong Kong-HKG-HK
+104.16.155.134:443#Asia Pacific-Hong Kong-HKG-HK
+104.16.245.226:443#Asia Pacific-Hong Kong-HKG-HK
+104.17.62.52:443#Asia Pacific-Hong Kong-HKG-HK
+104.19.55.167:443#Asia Pacific-Hong Kong-HKG-HK
+104.16.250.224:443#Asia Pacific-Hong Kong-HKG-HK
+104.17.146.131:443#Asia Pacific-Hong Kong-HKG-HK
+104.17.118.89:443#Asia Pacific-Hong Kong-HKG-HK
