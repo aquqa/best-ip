@@ -1,21 +1,21 @@
-104.16.91.4:443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-104.17.226.131:443#North America-Seattle-SEA-AS56046-China Mobile communications corporation
-104.17.226.202:8443#North America-Seattle-SEA-AS56046-China Mobile communications corporation
-104.18.0.105:443#North America-Seattle-SEA-AS56046-China Mobile communications corporation
-104.17.248.75:443#North America-Seattle-SEA-AS56046-China Mobile communications corporation
-104.16.84.114:443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-104.19.230.226:443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-104.20.22.226:443#North America-San Jose-SJC-AS56046-China Mobile communications corporation
-104.21.63.23:8443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-104.16.84.222:8443#North America-San Jose-SJC-AS56046-China Mobile communications corporation
-104.17.32.8:8443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-104.16.1.64:443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-104.17.248.61:443#North America-Seattle-SEA-AS56046-China Mobile communications corporation
-104.16.228.3:443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-104.19.121.93:443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-104.18.98.41:443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-162.159.149.91:443#Europe-London-LHR-AS56046-China Mobile communications corporation
-104.17.11.66:443#North America-Los Angeles-LAX-AS56046-China Mobile communications corporation
-162.159.131.141:443#Europe-London-LHR-AS56046-China Mobile communications corporation
-162.159.131.121:443#Europe-London-LHR-AS56046-China Mobile communications corporation
-162.159.248.119:443#North America-San Jose-SJC-AS56046-China Mobile communications corporation
+162.159.131.141:443#GB-London-LHR-AS56046
+162.159.149.91:443#GB-London-LHR-AS56046
+104.17.248.61:443#US-Seattle-SEA-AS56046
+104.17.226.202:8443#US-Seattle-SEA-AS56046
+104.17.226.131:443#US-Seattle-SEA-AS56046
+104.18.0.105:443#US-Seattle-SEA-AS56046
+104.16.91.4:443#US-Los Angeles-LAX-AS56046
+104.19.121.93:443#US-Los Angeles-LAX-AS56046
+104.17.248.75:443#US-Seattle-SEA-AS56046
+104.18.98.41:443#US-San Jose-SJC-AS56046
+104.16.1.64:443#US-Los Angeles-LAX-AS56046
+104.19.230.226:443#US-Los Angeles-LAX-AS56046
+104.16.84.114:443#US-Los Angeles-LAX-AS56046
+104.16.228.3:443#US-Los Angeles-LAX-AS56046
+104.21.63.23:8443#US-Los Angeles-LAX-AS56046
+162.159.248.119:443#US-San Jose-SJC-AS56046
+104.20.22.226:443#US-San Jose-SJC-AS56046
+104.17.32.8:8443#US-Portland-PDX-AS56046
+162.159.131.121:443#GB-London-LHR-AS56046
+104.17.11.66:443#US-Los Angeles-LAX-AS56046
+104.16.84.222:8443#US-San Jose-SJC-AS56046
