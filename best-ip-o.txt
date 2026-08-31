@@ -1,1 +1,11 @@
 104.16.91.4:443#Los Angeles-LAX
+162.159.149.91:443#Europe-London-LHR-GB
+104.19.230.226:443#North America-Los Angeles-LAX-US
+162.159.131.141:443#Europe-London-LHR-GB
+162.159.131.121:443#Europe-London-LHR-GB
+104.17.11.66:443#North America-Los Angeles-LAX-US
+104.16.228.3:443#North America-Los Angeles-LAX-US
+104.17.248.61:443#North America-Seattle-SEA-US
+104.18.0.105:443#North America-Seattle-SEA-US
+104.19.121.93:443#North America-Los Angeles-LAX-US
+104.17.248.75:443#North America-Seattle-SEA-US
