@@ -86,16 +86,19 @@ proxy-groups:
     type: select
     proxies:
       - DIRECT
+      - ♻️ 自动选择
       - REJECT
   - name: 👉🏻 手动选择Ⅱ
     type: select
     proxies:
       - DIRECT
+      - ♻️ 自动选择
       - REJECT
   - name: 👉🏽 手动选择Ⅲ
     type: select
     proxies:
       - DIRECT
+      - ♻️ 自动选择
       - REJECT
   - name: ♻️ 自动选择
     type: url-test
