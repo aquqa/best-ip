@@ -61,7 +61,7 @@ provider-common: &provider-common
   health-check:
     enable: true
     url: https://www.gstatic.com/generate_204
-    interval: 3600
+    interval: 86400
     timeout: 8000
     lazy: true
 
@@ -85,20 +85,20 @@ proxy-groups:
   - name: 👉 手动选择Ⅰ
     type: select
     proxies:
-      - DIRECT
       - ♻️ 自动选择
+      - DIRECT
       - REJECT
   - name: 👉🏻 手动选择Ⅱ
     type: select
     proxies:
-      - DIRECT
       - ♻️ 自动选择
+      - DIRECT
       - REJECT
   - name: 👉🏽 手动选择Ⅲ
     type: select
     proxies:
-      - DIRECT
       - ♻️ 自动选择
+      - DIRECT
       - REJECT
   - name: ♻️ 自动选择
     type: url-test
